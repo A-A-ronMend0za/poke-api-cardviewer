@@ -11,14 +11,14 @@ html {
   /* startBtn */
   --fs-1: 35rem;
   --fs-2: 5rem;
-  --fs-3: 3.4rem;
+  --fs-3: -21rem;
 }
 
 @media (max-width: 48rem) {
   :root {
     --fs-1: 15rem;
     --fs-2: 2rem;
-    --fs-3: 3rem;
+    --fs-3: -9.5rem;
   }
 }
 
@@ -66,6 +66,21 @@ footer {
   );
   color: black;
   border-top: solid black var(--fs-2);
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.8s;
+}
+
+@keyframes footer {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-image: none;
+    background-color: black;
+    color: magenta;
+  }
 }
 
 .startBtn {
@@ -75,5 +90,14 @@ footer {
   width: var(--fs-1);
   border-radius: 100%;
   border: solid black var(--fs-2);
-  margin-bottom: -10rem;
+  margin-bottom: var(--fs-3);
+}
+
+.dashboard {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: 1s;
 }
