@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  /* border: solid rebeccapurple; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --fs-1: 1.4rem;
+  --fs-2: 2.8rem;
+  --fs-3: 3.4rem;
+}
+
+@media (max-width: 48rem) {
+  :root {
+    --fs-1: 1rem;
+    --fs-2: 2.2rem;
+    --fs-3: 3rem;
+  }
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+  min-height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: var(--fs-3);
+}
