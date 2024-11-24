@@ -93,6 +93,11 @@ footer {
   margin-bottom: var(--fs-3);
 }
 
+.startBtn:active {
+  background-color: red;
+  border: solid black 2.5rem;
+}
+
 .dashboard {
   flex-grow: 0;
   display: flex;
