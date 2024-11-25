@@ -120,7 +120,6 @@ footer {
 
 .cardPlatform {
   display: flex;
-  height: 0;
 }
 
 .cardEmpty {
@@ -128,9 +127,22 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: grow 1s 1s 1 forwards;
+  animation: growCard 1s 1s 1 forwards;
   border: dashed grey 1rem;
   border-radius: 2.7%;
+}
+
+@keyframes growCard {
+  0% {
+    margin-top: 200%;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    margin-top: 2rem;
+    width: var(--fs-4);
+    height: var(--fs-5);
+  }
 }
 
 .card {
@@ -143,15 +155,19 @@ footer {
   background-image: linear-gradient(135deg, black, teal, purple);
 }
 
-@keyframes grow {
+.cardfaceEmpty {
+  animation: growFace 1s 1s 1 forwards;
+  border: dashed 1rem grey;
+}
+
+@keyframes growFace {
   0% {
-    margin-top: 200%;
     width: 0;
     height: 0;
   }
   100% {
+    width: 80vw;
+    height: 57vw;
     margin-top: 2rem;
-    width: var(--fs-4);
-    height: var(--fs-5);
   }
 }
