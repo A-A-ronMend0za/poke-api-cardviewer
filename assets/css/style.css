@@ -9,22 +9,25 @@ html {
 
 :root {
   /* startBtn */
-  --fs-1: 35rem;
-  --fs-2: 5rem;
-  --fs-3: -21rem;
+  --fs-1: 15rem;
+  --fs-2: 2rem;
+  --fs-3: -9.5rem;
 
   /* card */
-  --fs-4: 50rem;
-  --fs-5: 70rem;
+  --fs-4: 95vw;
+  --fs-5: 135vw;
 }
 
-@media (max-width: 48rem) {
+@media (min-width: 60rem) {
   :root {
-    --fs-1: 15rem;
-    --fs-2: 2rem;
-    --fs-3: -9.5rem;
-    --fs-4: 25rem;
-    --fs-5: 35rem;
+    /* startBtn */
+    --fs-1: 35rem;
+    --fs-2: 5rem;
+    --fs-3: -21rem;
+
+    /* card */
+    --fs-4: 50rem;
+    --fs-5: 70rem;
   }
 }
 
@@ -112,6 +115,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  /* background-color: blueviolet; */
 }
 
 .cardPlatform {
@@ -146,7 +150,7 @@ footer {
     height: 0;
   }
   100% {
-    margin-top: 0;
+    margin-top: 2rem;
     width: var(--fs-4);
     height: var(--fs-5);
   }
