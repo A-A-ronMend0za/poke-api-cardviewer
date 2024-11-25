@@ -12,6 +12,10 @@ html {
   --fs-1: 35rem;
   --fs-2: 5rem;
   --fs-3: -21rem;
+
+  /* card */
+  --fs-4: 50rem;
+  --fs-5: 70rem;
 }
 
 @media (max-width: 48rem) {
@@ -19,6 +23,8 @@ html {
     --fs-1: 15rem;
     --fs-2: 2rem;
     --fs-3: -9.5rem;
+    --fs-4: 25rem;
+    --fs-5: 35rem;
   }
 }
 
@@ -30,6 +36,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -38,7 +45,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  flex-grow: 1;
+  flex-grow: 6;
   transition: 1s;
   background-image: linear-gradient(
     135deg,
@@ -55,7 +62,7 @@ footer {
   justify-content: center;
   align-items: flex-end;
   width: 100%;
-  flex-grow: 1;
+  flex-grow: 6;
   transition: 1s;
   background-image: linear-gradient(
     135deg,
@@ -99,10 +106,48 @@ footer {
 }
 
 .dashboard {
+  display: none;
   flex-grow: 0;
-  display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  transition: 1s;
+}
+
+.cardPlatform {
+  display: flex;
+  height: 0;
+}
+
+.cardEmpty {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: grow 1s 1s 1 forwards;
+  border: dashed grey 1rem;
+  border-radius: 2.7%;
+}
+
+.card {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid gold 1rem;
+  border-radius: 2.7%;
+  background-image: linear-gradient(135deg, black, teal, purple);
+}
+
+@keyframes grow {
+  0% {
+    margin-top: 200%;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    margin-top: 0;
+    width: var(--fs-4);
+    height: var(--fs-5);
+  }
 }
