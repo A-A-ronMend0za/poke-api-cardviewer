@@ -3,6 +3,7 @@ var dashboardEl = $("#dashboardEl");
 var footerEl = $("#footerEl");
 
 var startBtn = $("#startBtn");
+var pokeballBottomEl = $("#pokeballBottomEl");
 var cardEl = $("#cardEl");
 
 startBtn.click(function () {
@@ -12,6 +13,10 @@ startBtn.click(function () {
   startBtn.attr(
     "style",
     "margin-bottom: 0; transition: 0.5s; transition-delay: 1s;"
+  );
+  pokeballBottomEl.attr(
+    "style",
+    "margin-top: 5rem; transition: 0.5s; transition-delay: 1s;"
   );
 
   //   cardEl.attr(

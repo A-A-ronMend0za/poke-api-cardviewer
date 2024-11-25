@@ -62,8 +62,9 @@ header {
 
 footer {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   flex-grow: 6;
   transition: 1s;
@@ -93,8 +94,18 @@ footer {
   }
 }
 
-.startBtn {
+.pokeballBottom {
   z-index: 1;
+  position: absolute;
+  height: var(--fs-1);
+  width: var(--fs-1);
+  border-radius: 100%;
+  margin-top: var(--fs-3);
+  background-color: black;
+}
+
+.startBtn {
+  z-index: 2;
   position: absolute;
   height: var(--fs-1);
   width: var(--fs-1);
