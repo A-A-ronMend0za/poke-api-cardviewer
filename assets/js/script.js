@@ -139,7 +139,6 @@ function displayPokemon(data) {
       "style",
       "background-image: linear-gradient(135deg, black, rgb(37, 37, 37), black); color: white;"
     );
-    detailRibbonEL.attr("style", "color: black");
     imgContainerEl.attr("style", "color: black");
   } else if (currentPokemonType == "fire") {
     cardEl.attr(
