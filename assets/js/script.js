@@ -4,7 +4,25 @@ var footerEl = $("#footerEl");
 
 var startBtn = $("#startBtn");
 var pokeballBottomEl = $("#pokeballBottomEl");
+
 var cardEl = $("#cardEl");
+var cardfaceEl = $("#cardfaceEl");
+var nameEl = $("#nameEl");
+var hpEl = $("#hpEl");
+var pkmnImg = $("#pkmnImg");
+var detailRibbonEL = $("#detailRibbonEl");
+var moveNodeEl = $("#moveNodeEl");
+var baseMoveEl = $("#baseMoveEl");
+var attackEl = $("# attackEl");
+var specialMoveEl = $("#spacialMoveEl");
+var specialAttackEl = $("#specialAttackEl");
+var cardFooterEl = $("#cardFooterEl");
+var abilityEl = $("#abilityEl");
+var infoBoxEl = $("#infoBoxEl");
+var cardBottomEl = $("#cardBottomEl");
+
+var pokemonOptionsEl = $("#pokemonOptionsEl");
+var cardOptionsEl = $("#cardOptionsEl");
 
 startBtn.click(function () {
   headerEl.attr("style", "flex-grow:0;");
