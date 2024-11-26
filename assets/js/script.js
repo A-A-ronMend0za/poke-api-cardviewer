@@ -18,9 +18,4 @@ startBtn.click(function () {
     "style",
     "margin-top: 5rem; transition: 0.5s; transition-delay: 1s;"
   );
-
-  //   cardEl.attr(
-  //     "style",
-  //     "display: flex; width: var(--fs-4);height: var(--fs-5);"
-  //   );
 });
