@@ -48,7 +48,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  flex-grow: 6;
+  flex-grow: 10;
   transition: 1s;
   background-image: linear-gradient(
     135deg,
@@ -66,7 +66,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  flex-grow: 6;
+  flex-grow: 10;
   transition: 1s;
   background-image: linear-gradient(
     135deg,
@@ -97,10 +97,10 @@ footer {
 .pokeballBottom {
   z-index: 1;
   position: absolute;
-  height: var(--fs-1);
+  height: 7.5rem;
   width: var(--fs-1);
-  border-radius: 100%;
-  margin-top: var(--fs-3);
+  border-radius: 0 0 35rem 35rem;
+  margin-top: -2rem;
   background-color: black;
 }
 
@@ -181,4 +181,59 @@ footer {
     height: 57vw;
     margin-top: 2rem;
   }
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  animation: optionsFade 1s 1s 1 forwards;
+  flex-grow: 0;
+  opacity: 0;
+  margin-top: 5%;
+  width: 100%;
+  height: 0;
+}
+
+@keyframes optionsFade {
+  0% {
+    height: auto;
+  }
+  100% {
+    opacity: 100%;
+    flex-grow: 1;
+    height: fit-content;
+  }
+}
+
+.optionsBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  border-radius: 2rem;
+  background-color: transparent;
+  border: solid blue 1rem;
+  border-radius: 2rem;
+  background-color: gold;
+  margin: 0 1rem;
+}
+
+.pikachu {
+  width: 100%;
+}
+
+.cardIcon {
+  height: 28vw;
+  width: 20vw;
+  border: dashed black 0.4rem;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.cardIconFace {
+  width: 80%;
+  margin: 18% 5% 70% 5%;
+  border: dashed black 0.3rem;
+  background-color: gold;
 }
