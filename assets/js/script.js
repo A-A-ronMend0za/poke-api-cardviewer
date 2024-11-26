@@ -16,6 +16,6 @@ startBtn.click(function () {
   );
   pokeballBottomEl.attr(
     "style",
-    "margin-top: 5rem; transition: 0.5s; transition-delay: 1s;"
+    "margin-top: 5rem; transition: 0.5s; transition-delay: 1s; height: 0;"
   );
 });
