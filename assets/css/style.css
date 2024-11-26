@@ -116,6 +116,10 @@ p {
   margin: 0 1rem;
 }
 
+img {
+  max-height: 50vw;
+}
+
 .hide {
   display: none;
 }
@@ -185,6 +189,9 @@ p {
 .cardfaceEmpty {
   animation: growFace 1s 1s 1 forwards;
   border: dashed 1rem grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes growFace {
@@ -196,6 +203,20 @@ p {
     width: 80vw;
     height: 57vw;
     margin-top: 2rem;
+  }
+}
+
+.unown {
+  display: flex;
+  height: 0;
+  opacity: 0;
+  animation: fadeIn 1s 2s 1 forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    height: auto;
+    opacity: 100%;
   }
 }
 
@@ -228,6 +249,10 @@ p {
   justify-content: space-between;
   padding-bottom: 1rem;
   margin-top: 1rem;
+}
+
+.pkmnImg {
+  display: none;
 }
 
 .detailRibbon {
