@@ -120,6 +120,18 @@ img {
   max-height: 50vw;
 }
 
+button {
+  flex-basis: 30%;
+}
+
+form {
+  flex-grow: 2;
+}
+
+input {
+  width: 100%;
+}
+
 .hide {
   display: none;
 }
@@ -317,8 +329,8 @@ img {
 }
 
 .cornerIcon {
-  position: absolute;
   z-index: 1;
+  position: absolute;
   margin-left: 36rem;
 }
 
@@ -352,13 +364,35 @@ img {
   border-radius: 2rem;
   background-color: transparent;
   border: solid blue 1rem;
-  border-radius: 2rem;
+
   background-color: gold;
   margin: 0 1rem;
 }
 
 .pikachu {
   width: 100%;
+}
+
+.pokemonMenuEl {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 98%;
+  z-index: 1;
+  position: absolute;
+  top: 35vh;
+  background-color: blue;
+  border-radius: 2rem;
+  padding: 1.6rem;
+}
+
+.menuRow {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: gold;
 }
 
 .cardIcon {
@@ -375,4 +409,15 @@ img {
   margin: 18% 5% 70% 5%;
   border: dashed black 0.3rem;
   background-color: gold;
+}
+
+.cardMenu {
+  background-color: aqua;
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
 }

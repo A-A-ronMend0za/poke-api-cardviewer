@@ -25,8 +25,10 @@ var abilityEl = $("#abilityEl");
 var infoBoxEl = $("#infoBoxEl");
 var cardBottomEl = $("#cardBottomEl");
 
-var pokemonOptionsEl = $("#pokemonOptionsEl");
-var cardOptionsEl = $("#cardOptionsEl");
+var pokemonOptionsBtn = $("#pokemonOptionsBtn");
+var pokemonMenuEl = $("#pokemonMenuEl");
+var cardOptionsBtn = $("#cardOptionsBtn");
+var cardMenuIcon = $("#cardMenuIcon");
 
 var currentPokemon = 0;
 var currentPokemonData = {};
@@ -272,13 +274,18 @@ function lockCardType(currentPokemonType) {
 
 startBtn.click(openDashboard);
 
-unown.click(getRandomPokemon);
+// unown.click(getRandomPokemon);
+cardfaceEl.click(getRandomPokemon);
 
-cardOptionsEl.click(function () {
-  console.log(currentPokemonData);
+pokemonOptionsBtn.click(function () {
+  pokemonMenuEl.toggleClass("pokemonMenuEl");
 });
 
-pokemonOptionsEl.click(getRandomPokemon);
+cardOptionsBtn.click(function () {
+  cardMenuIcon.toggleClass("cardMenu");
+});
+
+// pokemonOptionsEl.click(getRandomPokemon);
 
 // openDashboard();
 // getRandomPokemon();
